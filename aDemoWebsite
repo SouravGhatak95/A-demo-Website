@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>A demo website</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+ <style type="text/css">
+
+ 	body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #333333;
+    color: #ffffff;
+    line-height: 1.6;
+    height: 100vh;
+    overflow: hidden;
+}
+
+ 	
+ 	.home{
+ 		background: url('demo2.jpg');
+ 	}
+
+ 	.gallery{
+ 		background: url('demo3.jpg');
+ 	}
+
+ 	.about-me{
+ 		background: url('demo4.jpg');
+ 	}
+
+ 	.contact-me{
+ 		background: url('demo5.jpg');
+ 	}
+
+ 	.nav-item ul{
+ 		margin: 0px;
+ 		padding: 0px;
+ 		list-style: none;
+ 		display: flex;
+ 	}
+
+ 	.nav-item ul li{
+ 		width: 100%;
+ 		height: 40px;
+ 		line-height: 40px;
+ 		font-size: 20px;
+ 		background: black;
+ 		opacity: 0.8;
+ 		text-decoration: none;
+ 		text-align: center;
+ 		}
+
+ 	.nav-item ul li a{
+         text-decoration: none;
+         color: white;
+         padding: 5px;
+ 	}
+
+ 	.nav-item ul li a:hover{
+ 		background-color: skyblue;
+ 	}
+
+ 	.nav-item ul li ul li{
+ 		display: none;
+ 	}
+
+ 	.nav-item ul li:hover ul li{
+ 		display: block;
+ 	}
+
+	.container{
+		width: 100%;
+		height: 100%;
+		/*scroll effect*/
+		overflow-y: scroll;
+		scroll-behavior: smooth;
+		scroll-snap-type: y mandatory;
+	}
+
+section{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    scroll-snap-align: center;
+}
+
+section h1{
+	font-size: 70px;
+}
+
+section p{
+	font-size: 15px;
+}
+
+.button {
+            background-color: rgb(27, 52, 136);
+            border: none;
+            color: white;
+            padding: 15px 25px;
+            text-align: center;
+            font-size: 16px;
+            border-radius: 20px;
+            cursor: pointer;
+            margin-top: 5% ;
+          }
+
+	 .button:hover {
+            background-color: rgb(122, 122, 122);
+          }
+.footer
+{
+    color: rgb(255, 255, 255);
+    margin-top: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+
+}
+
+.footer a{
+	text-decoration: none;
+	font-size: 30px;
+}
+
+ </style>
+</head>
+<body>
+	<div class="container">
+		<nav class="nav-item">
+			<ul>
+				<li><a href="#Home">Home</a></li>
+				<li><a href="#Gallery">Gallery</a>
+          		<ul>
+          			<li><a href="#Images">Images</a></li>
+          			<li><a href="#Videos">Videos</a></li>
+          		</ul>
+				</li>
+				<li><a href="#AboutMe">About Me</a></li>
+				<li><a href="#ContactMe">Contact Me</a>
+				<ul>
+					<li><a href="#facebook">Facebook</a></li>
+					<li><a href="#Git-Hub">Git-Hub</a></li>
+				</ul>
+				</li>
+
+			</ul>
+
+		</nav>
+		
+		<section class="home">
+			<h1>Home Page</h1>
+			<p class="p-1">Add Here what you want to add...</p>
+		</section>
+
+		<section class="gallery">
+			<h1>Gallery</h1>
+			<p class="p-1">Attach Here what you want to attach...</p>
+		</section>
+
+		<section class="about-me">
+			<h1>About Me</h1>
+			<p class="p-1">Write Here what you want to write...</p>
+		</section>
+
+		<section class="contact-me">
+			<h1>Contact Me</h1>
+			<p class="p-1">Give Here what you want to give...</p>
+			<button class="button">Add me</button>
+		</section>
+
+		<p class="footer">
+			<small>
+				A small presentation, created by <a href="">Sourav Ghatak</a>
+			</small>
+		</p>
+
+
+	</div>
+</body>
+</html>
